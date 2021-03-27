@@ -58,5 +58,25 @@
     "tag": "Capabilities",
     "patterns": ["What can you do?", "What are your capabilities?", "What answers can you give me?", "How can you help me?", "Tell me about yourself"],
     "responses": ["Hey, I'm a bot of ComGrads. You can ask me questions like - How can I sign up?, What is Comgrads?, Developers contact info, Details of the course or you can just have a little chat with me ;)"]
+},
+{
+    "tag": "Courses",
+    "patterns": ["What are the courses avaliable?", "How many categories are there?", "What is the best course for me?", "Courses list", "List of course"],
+    "responses": ["These are our top courses you can check - Django Development, Python2&3, Web Development"]
+},
+{
+    "tag": "Django",
+    "patterns": ["Show me the Django course", "Django  available", "Django courses", "Top django catogories"],
+    "responses": ["Our top Django courses are - 1. Complete-Django-Developer Link - https://www.udemy.com/course/learn-to-deploy-django/  \n2. Introduction to Web Mapping and Web GIS  Link - https://www.udemy.com/course/web-mapping-and-web-gis-from-dev-to-deploy-2021-geodjango/ "]
+},
+{
+    "tag": "Python",
+    "patterns": ["What python are there?", "Python Top", "Python courses", "Top Python"],
+    "responses": ["Our top Python course are - Stock Market with Python  Link - https://www.udemy.com/course/build-a-stock-market-web-app-with-python-and-django/"]
+},
+{
+    "tag": "Gibberish",
+    "patterns": ["sgvsdvsd", "gergerbdgv", "f3rwefwefbiu", "rbergvcwaeg", "sgergeardvd", "43t8734gfawebo8fvo", "befvybvuywbv"],
+    "responses": ["Sorry, I didn't understand that. Try something else."]
 }
 ]}
