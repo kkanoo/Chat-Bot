@@ -1,0 +1,47 @@
+{"intents": [
+    {"tag": "greetings",
+    "patterns": ["hello", "hey", "hi", "good day", "greetings", "what's up?","how is it going?"],
+    "responses": ["Hello!", "Hey!", "What can I do for you?"]
+},
+{
+    "tag": "name",
+    "patterns": ["what is your name?", "what should I call you?", "who are you?","Can you tell me your name?","whats your name?", "Can you tell me your name"],
+    "responses": ["You can call me Jarvis!", "I'm Jarvis", "My name is Jarvis, I'm a bot of Comgrad :)"]
+
+},
+{
+    "tag": "goodbye",
+    "patterns": ["cya", "See you later", "goodbye", "Nice talking to you", "Have a good day", "bye", "see ya", "Adiue"],
+    "responses": ["Goodbye!", "Talk to you later!", "Have a nice day!", "Nice taking to you", "Keep Learning, goodbye!", "Sad to see you go :("]
+
+},
+{
+    "tag": "age",
+    "patterns": ["How old are you?", "Whats your age?", "how old?", "age?", "what is your age"],
+    "responses": ["I'm one day old and i'm still learning about myself"]
+
+},
+{
+    "tag": "questions",
+    "patterns": ["How to get the information of the course?", "Where to get the detail of the course?", "course detail", "know more about the course", "details?"],
+    "responses": ["Click on the i button on the bottom lest of the course card to know more about the course"]
+
+},
+{
+    "tag": "contact",
+    "patterns": ["Information of the owner", "contact detail of the developer", "Know more", "I have more questions to ask", "Can I get the info of creators?","Contact details"],
+    "responses":["kunal.kanoo@gmail.com", "imhs2000@gmail.com", "kkanoo_be19@thapar.edu"]
+
+},
+{
+    "tag": "others",
+    "patterns": ["How to sign up?", "Cannot find the desired course", "Website keeps on crashing", "Redirecting problem","link is not active","cannot register myself"],
+    "responses": ["I'm still learning, sorry if I was not able to resolve your problem. You can contact our creators by typing contact details, thank you :)"]
+
+},
+{
+    "tag": "Sign up",
+    "patterns": ["How can I sign up?", "Can I sign up with gmail?", "Is college email id required to sign up?"],
+    "responses": ["You can sign using your personal gmail account"]
+}
+]}
