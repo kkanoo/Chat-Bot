@@ -3,6 +3,9 @@ import json
 import pickle
 import numpy as np
 import random 
+import webbrowser
+import wikipedia
+import wolframalpha
 
 import nltk 
 from nltk.stem import WordNetLemmatizer
@@ -57,6 +60,18 @@ def index(request):
 def bot_search(request):
     query = request.GET.get('query')
     
-    res = predict_class(query)
-    ans = get_response(res, intents)
-    return render(request, 'chatbot/index.htm', {'ans': ans, 'query': query})
+    if 'alpha' in query:
+      query = query.replace('alpha', '')
+      client = wolframalpha.Client("J4HJJ6-VKWP9TQGLX")
+      res = client.query(query)
+      ans = next(res.results).text
+      return render(request, 'chatbot/index.htm', {'ans': ans, 'query': query})          
+    elif 'wiki' in query:
+      query = query.replace('wiki', '')
+      ans = wikipedia.summary(query, sentences=10)
+      return render(request, 'chatbot/index.htm', {'ans': ans, 'query': query})
+    else:
+      res = predict_class(query)
+      ans = get_response(res, intents)
+      return render(request, 'chatbot/index.htm', {'ans': ans, 'query': query})
+      
